@@ -1,24 +1,24 @@
-## Introduction
+## Context
+I want to create a service that is responsible to create and handle with shorter urls
 
-* Prologue (Summary)
-* Discussion (Context)
-* Solution (Decision)
-* Consequences (Results)
+It expected that the service handle with two cases:
+1. Given a long URL, it should return a shorter URL / ex: github.com/garri-codes/garri.ly -> garry.ly/FDAYI
+2. Given a shorter URL, it should redirect to long URL 
 
-## Specifics ##
+## Decision
 
-* Prologue (Summary)
-  * Statement to summarize:
-    * In the context of (use case)<br>
-      facing (concern)<br>
-      we decided for (option)<br>
-      to achieve (quality)<br>
-      accepting (downside).
-* Discussion (Context)
-  * Explains the forces at play (technical, political, social, project).
-  * This is the story explaining the problem we are looking to resolve.
-* Solution
-  * Explains how the decision will solve the problem.
-* Consequences
-  * Explains the results of the decision over the long term.
-  * Did it work, not work, was changed, upgraded, etc.
+At first moment, some rules should be followed 
+- Domain URL is static -> garri.ly/{HASH}
+- The service must be scalable, fault tolerant and high avaiable
+- The URL can be created but not updated or deleted
+- The service can handle with a traffic volume of 25 millions URLs generated per day
+- The service that handle with a traffic volume of 250 million redirect per day. (rule 70/30)
+
+### Which database use?
+- A ADR will be created to made a decision of which database should be used. ( key/value? / document? )
+
+### Which language use?
+- Go (no reasons for this choice, only to practice)
+
+### What about diagrams?
+- WIP
