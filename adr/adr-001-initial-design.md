@@ -13,6 +13,7 @@ At first moment, some rules should be followed
 - The URL can be created but not updated or deleted
 - The service can handle with a traffic volume of 25 millions URLs generated per day
 - The service that handle with a traffic volume of 250 million redirect per day. (rule 70/30)
+- Should apply a rate limit 
 
 ### Which database use?
 - A ADR will be created to made a decision of which database should be used. ( key/value? / document? )
