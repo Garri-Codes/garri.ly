@@ -19,7 +19,7 @@ At first moment, some rules should be followed
 - A ADR will be created to made a decision of which database should be used. ( key/value? / document? )
 
 ### Which language use?
-- Go (no reasons for this choice, only to practice)
+- Kotlin (no reasons for this choice, only to practice) 
 
 ### What about diagrams?
 [![Screen-Shot-2020-11-30-at-23-06-47.png](https://i.postimg.cc/C5kFhLdZ/Screen-Shot-2020-11-30-at-23-06-47.png)](https://postimg.cc/RJCrGm79)
