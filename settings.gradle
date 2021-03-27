@@ -8,4 +8,4 @@ pluginManagement {
 
 rootProject.name = 'garrily'
 
-include ('garrily-core', 'garrily-infrastructure')
+include ('garrily-core', 'garrily-infrastructure', 'garrily-web-application')
